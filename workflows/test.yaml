@@ -1,0 +1,1 @@
+name: Github Actionsrun-name: Testing Github Actionson: [push]jobs:  trail-ubuntu-run:    runs-on: ubuntu-latest    steps:    #clone the github to the runner system      uses: actions/checkout@v4      # running python command to see instalation versionname: Run tests      run:        python -m unittest test_scientific_calculator.py
